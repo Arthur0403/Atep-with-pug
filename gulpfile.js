@@ -34,7 +34,8 @@ const path = {
 							img: ['src/img/**/*.jpg',
 										'src/img/**/*.svg',
 										'src/img/**/*.png'],
-							font: 'src/fonts/**/*.*'
+							font: 'src/fonts/**/*.*',
+							pug:  'src/pug/**/*.pug',
 						},
 						watch: {
 							dev:  'src',
@@ -44,7 +45,8 @@ const path = {
 							img: ['src/img/**/*.jpg',
 										'src/img/**/*.svg',
 										'src/img/**/*.png'],
-							font: 'src/fonts/*.*'
+							font: 'src/fonts/*.*',
+							pug: 'src/pug/**/*.pug'
 						},
 					};
 
@@ -66,11 +68,12 @@ gulp.task('html', function() {
 });
 
 gulp.task('pug', function () {
-	return gulp.src(['src/pug/**/*.pug', '!src/pug/includes/*.pug'])
+	return gulp.src(path.src.pug)
 		.pipe(pug({
 			pretty:true
 		}))
-		.pipe(gulp.dest(path.build.html));
+		.pipe(gulp.dest(path.build.html))
+		.pipe(bwsync.stream());
 });
 
 gulp.task('font', function() {
@@ -160,6 +163,7 @@ gulp.task('imgx1', function() {
 
 gulp.task('watch', function() {
 	gulp.watch(path.watch.html, gulp.series('html'));
+	gulp.watch(path.watch.pug, gulp.series('pug'));
 	gulp.watch(path.watch.css, gulp.series('style'));
 	gulp.watch(path.watch.js, gulp.series('js'));
 	gulp.watch(path.watch.font, gulp.series('font'));
