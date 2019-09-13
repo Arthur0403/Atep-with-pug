@@ -1,0 +1,326 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title
+        block title
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="css/style.css")
+    script(src="https://www.google.com/recaptcha/api.js")
+  body
+   header.header
+  .header-wrapper.main-wrapper
+    a.accessible.header__accessible(href="#main-content") Перейти к основному контенту
+    .header__item.header__item--logo
+      .logo
+        a.logo__link(href="index.html")
+          | A
+          span tep
+    nav.header__item.main-nav
+      ul
+        li.main-nav__item
+          a.main-nav__link(href="index.html")
+            span Г
+            span л
+            span а
+            span в
+            span н
+            span а
+            span я
+        li.main-nav__item.main-nav__item--submenu
+          a.main-nav__link(href="cathalog.html")
+            span Д
+            span л
+            span я
+            span н
+            span е
+            span е
+          .main-nav__submenu-wrapper
+            .main-nav__submenu
+              a.accessible.main-nav__submenu__accessible(href="#for-him")
+                | Перейти к следующему
+                | пункту
+              ul.main-nav__column
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link.main-nav__submenu-link--title(href="#") Одежда
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Платья
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Блузки
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Футболки
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Брюки
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Юбки
+              ul.main-nav__column
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link.main-nav__submenu-link--title(href="#") Обувь
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Кроссовки
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Кеды
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Туфли
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Балетки
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Сланцы
+              ul.main-nav__column
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link.main-nav__submenu-link--title(href="#") Аксессуары
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Часы
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Серьги
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Кольца
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Ожерелье
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Поло
+        li.main-nav__item.main-nav__item--submenu
+          a#for-him.main-nav__link.selected(href="cathalog.html")
+            span Д
+            span л
+            span я
+            span н
+            span е
+            span г
+            span о
+          .main-nav__submenu-wrapper
+            .main-nav__submenu
+              a.accessible.main-nav__submenu__accessible(href="#lookbook")
+                | Перейти к
+                | следующему пункту
+              ul.main-nav__column
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link.main-nav__submenu-link--title(href="#") Одежда
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Куртки
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Рубашки
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Футболки
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Брюки
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Шорты
+              ul.main-nav__column
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link.main-nav__submenu-link--title(href="#") Обувь
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Кроссовки
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Кеды
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Туфли
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Ботинки
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Сланцы
+              ul.main-nav__column
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link.main-nav__submenu-link--title(href="#") Аксессуары
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Часы
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Ремни
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Кольца
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Перчатки
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(href="#") Фуражки
+        li.main-nav__item
+          a#lookbook.main-nav__link(href="#")
+            span L
+            span o
+            span o
+            span k
+            span b
+            span o
+            span o
+            span k
+        li.main-nav__item
+          a.main-nav__link
+            span B
+            span l
+            span o
+            span g
+    ul.header__item.header__item--user-menu.user-menu
+      li.user-menu__item.user-menu__item--favorites
+        a.user-menu__link.link-favorites(href="favorites.html")
+          span.visually-hidden Избранное
+          svg.user-menu__icon(width="21" height="21")
+            use(xlink:href="img/sprite.svg#icon-favorites")
+      li.user-menu__item.user-menu__item--cart
+        a.user-menu__link(href="#")
+          span.visually-hidden В вашей корзине 
+          span.user-menu__number-purchases 0
+          span.visually-hidden  товаров
+          svg.user-menu__icon(width="22" height="22")
+            use(xlink:href="img/sprite.svg#icon-cart")
+      li.user-menu__item.user-menu__item--user
+        a.user-menu__link.link-login(href="#")
+          span.visually-hidden Пользователь
+          svg.user-menu__icon(width="23" height="23")
+            use(xlink:href="img/sprite.svg#icon-user")
+      li.user-menu__item.user-menu__item--search
+        a.user-menu__link(href="#")
+          span.visually-hidden Поиск
+          svg.user-menu__icon(width="20" height="20")
+            use(xlink:href="img/sprite.svg#icon-search")
+
+block content
+
+footer.footer
+  .footer__wrapper
+    nav.footer__item.footer__item--menu
+      ul.footer__nav-menu
+        li.footer__nav-item
+          a.main-nav__link.main-nav__link--footer(href="#")
+            span A
+            span b
+            span o
+            span u
+            span t
+            span u
+            span s
+        li.footer__nav-item
+          a.main-nav__link.main-nav__link--footer(href="#")
+            span L
+            span o
+            span o
+            span k
+            span b
+            span o
+            span o
+            span k
+        li.footer__nav-item
+          a.main-nav__link.main-nav__link--footer
+            span B
+            span l
+            span o
+            span g
+        li.footer__nav-item
+          a.main-nav__link.main-nav__link--footer(href="#")
+            span T
+            span e
+            span l
+            span .
+            span 8
+            span 9
+            span 9
+            span 9
+            span 9
+            span 9
+            span 9
+            span 9
+            span 9
+            span 9
+            span 9
+    .footer__item.footer__item--logo
+      .logo
+        a.logo__link(href="index.html" aria-label="На главную страницу")
+          | A
+          span tep
+    .footer__item.footer__item--slogan
+      | On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms.
+    .footer__item
+      form#form-follow.footer__form(method="post" action="#" name="form-follow")
+        label.footer__form-label(for="form-follow-email") Follow us
+        input#form-follow-email.footer__form-input(type="email" onkeyup="checkFooterForm();" name="email" maxlength="30" placeholder="Email...")
+        input#submit-form-follow.footer__form-button.form-button(type="submit" name="submit_form-follow" value="Подписаться" disabled="")
+    .footer__item.footer__item--info
+      | @ 2019 ATEP. ® All Right Reserved
+.modal-wrapper
+section.modal.modal--login
+  picture.modal__article-photo
+    source(type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/modal-favorites-img_desk.webp 1x, img/wx2/modal-favorites-img_desk.webp 2x, img/wx3/modal-favorites-img_desk.webp 3x")
+    source(type="image/webp" media="(min-width: 768px)" srcset="img/wx1/modal-favorites-img_tab.webp 1x, img/wx2/modal-favorites-img_tab.webp 2x, img/wx3/modal-favorites-img_tab.webp 3x")
+    source(type="image/webp" srcset="img/wx1/modal-favorites-img_mob.webp 1x, img/wx2/modal-favorites-img_mob.webp 2x, img/wx3/modal-favorites-img_mob.webp 3x")
+    source(media="(min-width: 1220px)" srcset="img/modal-favorites-img_desk.jpg")
+    source(media="(min-width: 768px)" srcset="img/modal-favorites-img_tab.jpg")
+    img.image(src="img/modal-favorites-img_mob.jpg")
+  form.modal__form.modal__form--favorites-login(action="" method="post" name="login-form")
+    h3.modal__title Вход
+    label.modal__label.visually-hidden(for="login-email") Введите email
+    input#login-email.modal__input(type="email" name="login" placeholder="Email" required="")
+    label.modal__label.visually-hidden(for="login-password") Введите пароль
+    input#login-password.modal__input(name="pasword" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password" required="")
+    #recaptcha.modal__input.modal__input--captcha.g-recaptcha(data-sitekey="6LeBMLQUAAAAAMpIkzxAeI6yHx-dgA7k6XZaSZ2U")
+    .modal__label.modal__label--captchaError
+    .modal__buttons
+      .modal__button-group
+        input#submit-login.modal__button.modal__button--login.form-button(type="submit" name="submit_login-login" value="Войти")
+        a.modal__link.link-recovery(href="#") Забыли пароль?
+      span или
+      a.modal__button.form-button(href="#") Подписаться
+section.modal-right.modal-right--favorites
+  h3.modal-right__title Избранное
+  .modal-right__item
+    picture.modal-right__photo
+      source(type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/modal-favorites-img_2_desk.webp 1x, img/wx2/modal-favorites-img_2_desk.webp 2x, img/wx3/modal-favorites-img_2_desk.webp 3x")
+      source(type="image/webp" media="(min-width: 768px)" srcset="img/wx1/modal-favorites-img_2_tab.webp 1x, img/wx2/modal-favorites-img_2_tab.webp 2x, img/wx3/modal-favorites-img_2_tab.webp 3x")
+      source(type="image/webp" srcset="img/wx1/modal-favorites-img_2_mob.webp 1x, img/wx2/modal-favorites-img_2_mob.webp 2x, img/wx3/modal-favorites-img_2_mob.webp 3x")
+      source(media="(min-width: 1220px)" srcset="img/modal-favorites-img_2_desk.jpg")
+      source(media="(min-width: 768px)" srcset="img/modal-favorites-img_2_tab.jpg")
+      img.image(src="img/modal-favorites-img_2_mob.jpg")
+    .modal-right__content
+      button.modal-right__delete
+        span.visually-hidden Удалить из избранного
+      button.modal-right__add-cart Добавить в корзину
+      p.modal-right__text Boys light blue jacket
+      p.modal-right__text
+        | 1 × 
+        span.modal-right__price $35.99
+  .modal-right__item
+    picture.modal-right__photo
+      source(type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/modal-favorites-img_2_desk.webp 1x, img/wx2/modal-favorites-img_2_desk.webp 2x, img/wx3/modal-favorites-img_2_desk.webp 3x")
+      source(type="image/webp" media="(min-width: 768px)" srcset="img/wx1/modal-favorites-img_2_tab.webp 1x, img/wx2/modal-favorites-img_2_tab.webp 2x, img/wx3/modal-favorites-img_2_tab.webp 3x")
+      source(type="image/webp" srcset="img/wx1/modal-favorites-img_2_mob.webp 1x, img/wx2/modal-favorites-img_2_mob.webp 2x, img/wx3/modal-favorites-img_2_mob.webp 3x")
+      source(media="(min-width: 1220px)" srcset="img/modal-favorites-img_2_desk.jpg")
+      source(media="(min-width: 768px)" srcset="img/modal-favorites-img_2_tab.jpg")
+      img.image(src="img/modal-favorites-img_2_mob.jpg")
+    .modal-right__content
+      button.modal-right__delete
+        span.visually-hidden Удалить из избранного
+      button.modal-right__add-cart Добавить в корзину
+      p.modal-right__text Boys light blue jacket
+      p.modal-right__text
+        | 1 × 
+        span.modal-right__price $35.99
+  .modal-right__item
+    picture.modal-right__photo
+      source(type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/modal-favorites-img_2_desk.webp 1x, img/wx2/modal-favorites-img_2_desk.webp 2x, img/wx3/modal-favorites-img_2_desk.webp 3x")
+      source(type="image/webp" media="(min-width: 768px)" srcset="img/wx1/modal-favorites-img_2_tab.webp 1x, img/wx2/modal-favorites-img_2_tab.webp 2x, img/wx3/modal-favorites-img_2_tab.webp 3x")
+      source(type="image/webp" srcset="img/wx1/modal-favorites-img_2_mob.webp 1x, img/wx2/modal-favorites-img_2_mob.webp 2x, img/wx3/modal-favorites-img_2_mob.webp 3x")
+      source(media="(min-width: 1220px)" srcset="img/modal-favorites-img_2_desk.jpg")
+      source(media="(min-width: 768px)" srcset="img/modal-favorites-img_2_tab.jpg")
+      img.image(src="img/modal-favorites-img_2_mob.jpg")
+    .modal-right__content
+      button.modal-right__delete
+        span.visually-hidden Удалить из избранного
+      button.modal-right__add-cart Добавить в корзину
+      p.modal-right__text Boys light blue jacket
+      p.modal-right__text
+        | 1 × 
+        span.modal-right__price $35.99
+  a.modal-right__button.form-button(href="#") LookBook
+  button.modal-right__close
+    span.visually-hidden Выйти из избранного
+section.modal.modal--recovery
+  form.modal__form(action="" method="post" name="password-recovery-form")
+    h3.modal__title.modal__title--recovery Восстановление пароля
+    label.modal__label
+      span.modal__text Введите ваш email адрес...
+      input#email-recovery.modal__input.modal__input--recovery(type="email" name="login-recovery" placeholder="Email..." required="")
+    p.modal__text
+      | Укажите адрес эл. почты, который вы использовали при оформлении заказов в ATEP. Мы вышлем вам инструкцию по восстановлению пароля.
+    .modal__buttons.modal__buttons--recovery
+      input.modal__button.modal__button--recovery.form-button(type="submit" value="Восстановить пароль")
+      a.modal__button.form-button.link-login.modal__button--recovery(href="#") Вспомнили пароль?
+
+
+    script(type="text/javascript" src="js/script.js")
